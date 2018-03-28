@@ -6,12 +6,16 @@ $(document).ready(function(){
 		kryptonTotal = 0, occulusTotal = 0, irisTotal = 0, everestTotal = 0, boyaTotal = 0;
 		
 	valPerOption = function(){
-		$('.body span').click(function(){
-			var operationClicked = $(this).attr('class')
-			var thisCliked = $(this).closest('li.item-list').find('p').attr('class');
-			if ( thisCliked == "krypton" ){
+		$('.modal .modal-body .pack-item-body .moreless-btn').click(function(){
+			if($(this).hasClass('more')){
+				operationClicked = true;
+			}else{
+				operationClicked = false;
+			}
+			var thisCliked = $(this).closest('li.item-list').children();
+			if ( thisCliked.hasClass('krypton')){
 				clickValue = 10;
-				if ( operationClicked === "more" ){
+				if ( operationClicked ){
 					kryptonQty = kryptonQty + 1;
 					kryptonTotal = clickValue * kryptonQty;
 				}else{
@@ -22,12 +26,13 @@ $(document).ready(function(){
 						kryptonTotal = kryptonTotal - clickValue;
 					}
 				}
-				$(this).siblings().find('span.number').text(kryptonQty)
-				$(this).siblings().find('span.total').text(kryptonTotal)
+				console.log($(this).siblings());
+				$(this).siblings('span.number').text(kryptonQty)
+				$(this).parent().prev().find('span.total').text("$" + kryptonTotal)
 			}
-			if ( thisCliked == "occulus" ){
+			if ( thisCliked.hasClass('occulus')){
 				clickValue = 20;
-				if ( operationClicked === "more" ){
+				if ( operationClicked ){
 					occulusQty = occulusQty + 1;
 					occulusTotal = clickValue * occulusQty;
 				}else{
@@ -38,12 +43,12 @@ $(document).ready(function(){
 						occulusTotal = occulusTotal - clickValue;
 					}
 				}
-				$(this).siblings().find('span.number').text(occulusQty)
-				$(this).siblings().find('span.total').text(occulusTotal)
+				$(this).siblings('span.number').text(occulusQty)
+				$(this).parent().prev().find('span.total').text("$" + occulusTotal)
 			}
-			if ( thisCliked == "iris" ){
+			if ( thisCliked.hasClass('iris')){
 				clickValue = 30;
-				if ( operationClicked === "more" ){
+				if ( operationClicked ){
 					irisQty = irisQty + 1;
 					irisTotal = clickValue * irisQty;
 				}else{
@@ -54,12 +59,12 @@ $(document).ready(function(){
 						irisTotal = irisTotal - clickValue;
 					}
 				}
-				$(this).siblings().find('span.number').text(irisQty)
-				$(this).siblings().find('span.total').text(irisTotal)
+				$(this).siblings('span.number').text(irisQty)
+				$(this).parent().prev().find('span.total').text("$" + irisTotal)
 			}
-			if ( thisCliked == "everest" ){
+			if ( thisCliked.hasClass('everest')){
 				clickValue = 40;
-				if ( operationClicked === "more" ){
+				if ( operationClicked ){
 					everestQty = everestQty + 1;
 					everestTotal = clickValue * everestQty;
 				}else{
@@ -70,12 +75,12 @@ $(document).ready(function(){
 						everestTotal = everestTotal - clickValue;
 					}
 				}
-				$(this).siblings().find('span.number').text(everestQty)
-				$(this).siblings().find('span.total').text(everestTotal)
+				$(this).siblings('span.number').text(everestQty)
+				$(this).parent().prev().find('span.total').text("$" + everestTotal)
 			}
-			if ( thisCliked == "boya" ){
+			if ( thisCliked.hasClass('boya')){
 				clickValue = 50;
-				if ( operationClicked === "more" ){
+				if ( operationClicked ){
 					boyaQty = boyaQty + 1;
 					boyaTotal = clickValue * boyaQty;
 				}else{
@@ -86,12 +91,12 @@ $(document).ready(function(){
 						boyaTotal = boyaTotal - clickValue;
 					}
 				}
-				$(this).siblings().find('span.number').text(boyaQty)
-				$(this).siblings().find('span.total').text(boyaTotal)
+				$(this).siblings('span.number').text(boyaQty)
+				$(this).parent().prev().find('span.total').text("$" + boyaTotal)
 			}
 			total = kryptonTotal + occulusTotal + irisTotal + everestTotal + boyaTotal;
 			
-			$('h2').text("Total: $" + total);
+			$('.modal-dialog .modal-content .modal-footer h2').text("Total: $" + total);
 		});
 	}
 	
@@ -124,4 +129,5 @@ $(document).ready(function(){
 	scrollNav();
 	valPerOption();
 	hoverOnPack();
+	resetVal();
 })

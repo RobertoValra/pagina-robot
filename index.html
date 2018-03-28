@@ -35,8 +35,8 @@
 					<ul class="nav navbar-nav">
 						<li><a href="#plansSection">Beneficios</a></li>
 						<li><a href="#packSection">Paquetes</a></li>
-						<li><a href="#">Personaliza</a></li>
-						<li><a href="#formSection">Contacto</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#customizeModal">Personalizar</a></li>
+						<li><a href="#customBtnSection">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 				</a>
 			</div>
 			<div class="intro-text">
-				<h1>Robótica</h1>
+				<h1>ROBÓTICA</h1>
 				<p>lorem isum impes telr siut apressp aisueue asuas lorem isum impes telr </p>
 				<p>lorem isum impes telr siut apressp aisueue asuas lorem isum impes telr siut apressp aisueue asuas </p>
 			</div>
@@ -91,7 +91,7 @@
 		<div id="plansSection" class="plans-section">
 			<div class="benefits">
 				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<h2>Beneficios</h2>
+					<h2>BENEFICIOS</h2>
 					<ul class="benefits-list">
 						<li>Aisueue asuas lorem isum impes telr</li>
 						<li>Lorem isum impes telr siut apressp </li>
@@ -138,7 +138,7 @@
 							<div class="figcaption">
 								<h2>Paquete 1</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</div>
@@ -149,7 +149,7 @@
 							<div class="figcaption">
 								<h2>Paquete 2</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</div>
@@ -160,7 +160,7 @@
 							<div class="figcaption">
 								<h2>Paquete 3</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</div>
@@ -171,7 +171,7 @@
 							<div class="figcaption">
 								<h2>Paquete 4</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</div>
@@ -185,7 +185,7 @@
 							<div class="figcaption">
 								<h2>Paquete 1</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 							</div>			
 						</figure>
 					</li>
@@ -195,7 +195,7 @@
 							<div class="figcaption">
 								<h2>Paquete 2</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</figure>
@@ -209,7 +209,7 @@
 							<div class="figcaption">
 								<h2>Paquete 1</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</figure>
@@ -220,7 +220,7 @@
 							<div class="figcaption">
 								<h2>Paquete 2</h2>
 								<p>Estudiantes 1-50 <br><br> 5 Krypton<br>1 Oculus </p>
-								<a href="#">View more</a>
+								<a href="#" data-toggle="modal" data-target="#detailModal">View more</a>
 								<span class="pack-img-title">Paquete 1</span>
 							</div>			
 						</figure>
@@ -230,7 +230,7 @@
 		</div>
 		
 		<div id="customBtnSection" class="custom-btn-section">
-			<button type="button" class="btn">
+			<button type="button" class="btn" data-toggle="modal" data-target="#customizeModal">
 				Personaliza tu paquete
 			</button>
 		</div>
@@ -240,19 +240,132 @@
 			<div class="form">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<form>
-						<input type="text" name="firstname"><br><br>
-						<input type="text" name="firstname"><br><br>
-						<input type="text" name="lastname">
+						<input type="text" name="firstname" placeholder="Nombre"><br><br>
+						<input type="text" name="lastname" placeholder="Apellido"><br><br>
+						<input type="text" name="email" placeholder="Correo">
 					</form>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<textarea rows="7" cols="50">w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
-					</textarea>
+					<textarea rows="7" cols="50"> </textarea>
 				</div>
 				<div class="form-btn">
 					<button type="button" class="btn">
 						Enviar
 					</button>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Calculator Modal -->
+		<div class="modal fade" id="customizeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Personaliza tu paquete</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ul class="product-list">
+							<li class="item-list">
+								<div class="pack-item-title krypton">
+									No. de Kryton
+									<span class="total">$0</span>
+								</div>
+								<div class="pack-item-body">
+									<div class="less moreless-btn">-</div>
+									<span class="number">0</span>
+									<div class="more moreless-btn">+</div>
+								</div>
+							</li>
+							<li class="item-list">
+								<div class="pack-item-title occulus">
+									No. de Occulus
+									<span class="total">$0</span>
+								</div>
+								<div class="pack-item-body">
+									<div class="less moreless-btn">-</div>
+									<span class="number">0</span>
+									<div class="more moreless-btn">+</div>
+								</div>
+							</li>
+							<li class="item-list">
+								<div class="pack-item-title iris">
+									No. de Iris
+									<span class="total">$0</span>
+								</div>
+								<div class="pack-item-body">
+									<div class="less moreless-btn">-</div>
+									<span class="number">0</span>
+									<div class="more moreless-btn">+</div>
+								</div>
+							</li>
+							<li class="item-list">
+								<div class="pack-item-title everest">
+									No. de Everest
+									<span class="total">$0</span>
+								</div>
+								<div class="pack-item-body">
+									<div class="less moreless-btn">-</div>
+									<span class="number">0</span>
+									<div class="more moreless-btn">+</div>
+								</div>
+							</li>
+							<li class="item-list">
+								<div class="pack-item-title boya">
+									No. de Boya
+									<span class="total">$0</span>
+								</div>
+								<div class="pack-item-body">
+									<div class="less moreless-btn">-</div>
+									<span class="number">0</span>
+									<div class="more moreless-btn">+</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<h2>Total: $0</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Detail Modal -->
+		<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Ver equipos</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ul class="pack-detail">
+							<li class="pack-detail-item video">
+								<div class="video-space">
+								</div>
+								<p class="pack-detail-exp">lorem isum impes telr siut apressp aisueue asuas lorem isum impes telr lorem isum impes telr siut apressp aisueue asuas lorem isum impes telr </p>
+							</li>
+							<li class="pack-detail-item project-no">
+								<h4>No. de proyectos</h4>
+								<div class="video-space">
+								</div>
+							</li>
+							<li class="pack-detail-item test">
+								<h4>Testitmonios</h4>
+								<div class="video-space">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn" data-toggle="modal" data-target="#customizeModal">
+							Cotizar
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

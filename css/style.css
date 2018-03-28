@@ -137,6 +137,7 @@ body, html{
     list-style: none;
 	display: inline-block;
 	margin-top: 20px;
+	width: 45%;
 }
 .grid h3{
 	text-align: left;
@@ -168,7 +169,6 @@ body, html{
 .custom-btn-section .btn{
 	background-color: #2c68c9;
 	color: #fff;
-
 }
 /*******Ends custom button section********/
 
@@ -192,7 +192,6 @@ body, html{
 }
 .form-section .btn{	    
 	margin-top: 20px;
-	width: 20%;
 }
 /**********Ends form section********/
 
@@ -213,3 +212,106 @@ body, html{
 	cursor: pointer;
 	font-size: 20px;
 }
+.modal-dialog .modal-content .modal-header{
+	background-color: #2c68c9;
+	color: #fff;
+}
+.modal-dialog .modal-content .modal-header .close{
+	position: absolute;
+    top: 16px;
+    right: 14px;
+}
+#customizeModal .modal-dialog .modal-content .modal-body{
+    width: 100%;
+}
+#customizeModal .modal-footer{
+    background-color: #eaeaea;
+	text-align: center;
+	padding-top: 0;
+}
+#customizeModal .pack-item{
+    margin-top: 10px;
+}
+#customizeModal .pack-item-title{
+	background-color: #eaeaea;
+	padding: 10px;
+	position: relative;
+}
+#customizeModal .pack-item-body{
+	background-color: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+}
+#customizeModal ul.product-list{
+	padding: 0;
+	text-align: left
+}
+#customizeModal ul.product-list li.item-list{
+	list-style: none;
+    margin-top: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+}
+.moreless-btn {
+	display: inline-flex;
+	width: 40px;
+    height: 40px;
+	border-radius: 50%;
+	background-color: #2c68c9;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.number, .total{
+	font-size: 25px;
+}
+.total{
+	position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.number{
+	padding-left: 15px;
+    padding-right: 15px;
+}
+.less{
+	padding-left: 16px;
+    padding-top: 3px;
+}
+.more{
+    padding-left: 14px;
+    padding-top: 3px;
+}
+/***********Detail modal**************/
+.pack-detail-item{
+	list-style: none;
+}
+.pack-detail-item .video-space{
+	height: 200px;
+	width: 100%;
+	background-color: #000;
+}
+ul.pack-detail{
+	padding: 0 40px 40px;
+}
+ul.pack-detail p{
+	margin-top: 10px;
+}
+ul.pack-detail li.pack-detail-item{
+	margin-top: 20px;
+}
+ul.pack-detail li.pack-detail-item h4{
+	text-align: center;
+}
+#detailModal .modal-footer .btn{
+	background-color: #2c68c9;
+	color:#fff;
+}
+#detailModal .modal-footer{
+	text-align: center
+}
+/*******ends detail modal******/
